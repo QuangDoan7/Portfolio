@@ -27,31 +27,28 @@ function Content({page}) {
                     <img src={me} alt="me"/>
                     <div>
                         <p>
-                            My name is Thanh Quang Doan. I am an international student from Vietnam, currently living in Hamilton and
-                            studying <strong>Software Developmen</strong>  at Mohawk College. My career goal is to begin as a Front-end Developer
-                            and gradually expand into a higher level such as <strong>Full-stack Development</strong>, <strong>Mobile App Development</strong>,
-                            and <strong>Game Development</strong>.
+                            My name is Thanh Quang Doan. I am a Software Development student at Mohawk College, currently based in Hamilton,
+                            Canada, with a strong academic record <strong>(GPA: 90.5)</strong>. I am seeking a co-op opportunity in software development,
+                            with a primary interest in <strong>Front-end</strong> and <strong>Full-stack</strong> roles, while remaining open to opportunities
+                            in <strong>software support</strong> and related <strong>technical positions</strong>.
                         </p>
                         <p>
-                            I am currently focused on building a strong foundation in software development through formal education and
-                            continuous self-learning. Alongside my college studies, I actively practice problem-solving skills by completing
-                            coding challenges on <strong>LeetCode</strong> and developing personal projects.
+                            I have built some full-stack applications that integrate frontend interfaces, backend APIs, and databases using technologies
+                            such as <strong>React</strong>, <strong>JavaScript</strong>, <strong>ASP.NET</strong>, and <strong>SQL</strong>, 
+                            focusing on clean architecture and real-world functionality.
                         </p>
                         <p>
-                            Before transitioning into the IT field, I earned a Bachelor's degree in <strong>English Language</strong> in Vietnam,
-                            specializing in <strong>Translation and Interpretation</strong>. I have professional experience as a Translator,
-                            <strong>an Assistant to the Director of an International School</strong>, and later
-                            as <strong>a Construction Project Illustrator</strong> at a Japanese company.
-                            These roles helped me develop strong adaptability, communication skills, and the ability to learn new domains efficiently.
+                            Alongside my studies, I continuously strengthen my problem-solving skills through <strong>LeetCode</strong> and personal projects,
+                            with an emphasis on understanding core programming concepts and writing maintainable code.
                         </p>
                         <p>
-                            I am now fully committed to pursuing a career in Software Development, driven by a strong interest in technology and programming.
-                            Having been familiar with computers from a very young age, learning and applying new technical knowledge
-                            has always felt natural and motivating to me.
+                            Before transitioning into software development, I worked as a <strong>Translator</strong>, <strong>Assistant to a Director</strong>,
+                            and <strong>Technical Illustrator</strong>. These experiences helped me develop strong communication skills, attention to detail,
+                            and the ability to quickly adapt to new domains.
                         </p>
                         <p>
-                            This portfolio was built using HTML, CSS, and React, which I learned independently through self-study so far.
-                            I am always eager to learn, refine my skills, and grow as a developer through new challenges and opportunities.
+                            I am eager to apply my skills in real-world environments, contribute to a development team,
+                            and continue growing as a developer.
                         </p>
                     </div>
                 </section>
@@ -61,32 +58,16 @@ function Content({page}) {
                 <section className="education-section">
                     <h2>Education</h2>
                     <div>
-                        <p>
-                            Before arriving in Canada, I completed my education in Vietnam, where I earned a degree in English Language
-                            with a specialization in Translation and Interpretation. Currently, I am pursuing a diploma in Software Development
-                            at Mohawk College in Canada, which I expect to complete by May 2028.
-                        </p>
-                        <h3>HO CHI MINH CITY UNIVERSITY OF TECHNOLOGY (HUTECH)</h3>
-                        <ul className="hutech-education">
-                            <li>Years of education: 2011 - 2015</li>
-                            <li>Degree: Bachelor of Arts (B.A.) in English Language</li>
-                            <li>Major: Translation and Interpretation</li>
+                        <h3>Software Development Advanced Diploma</h3>
+                        <ul>
+                            <li>Mohawk College - Hamilton, Ontario, Canada </li>
+                            <li>2024 - 2028 (Expected) | GPA: 90.5</li>
                         </ul>
-                        <h3>MOHAWK COLLEGE</h3>
-                        <ul className="mohawk-education">
-                            <li>Years of education: 2025 - 2028 (expected)</li>
-                            <li>Ontario College Advanced Diploma (OCAD): Computer Systems Technology</li>
-                            <li>Major: Software Development</li>
-                            <li>Current GPA: 90.45%</li>
+                        <h3>Bachelor of Arts in English Language (Translation and Interpretation)</h3>
+                        <ul>
+                            <li>Ho Chi Minh City University of Technology (HUTECH) — Vietnam</li>
+                            <li>2011 - 2015</li>
                         </ul>
-                    </div>
-                    <div>
-                        <p>
-                            After completing my undergraduate degree, I spent several years working in professional roles
-                            that helped me develop strong adaptability, responsibility, and real-world experience.
-                            Over time, my long-standing interest in technology and information systems led me to pursue
-                            further education in Software Development, which is why I chose Mohawk College to begin this transition.
-                        </p>
                     </div>
                 </section>
             )}
@@ -95,33 +76,41 @@ function Content({page}) {
                 <section className="work-experience-section">
                     <h2>Work Experience</h2>
                     <div>
-                        <p>
-                            After graduating with a degree in English Language, I worked in several professional roles that
-                            helped me develop strong attention to detail, communication skills, and adaptability.
-                            These experiences provided a solid foundation thatcontinues to support my transition into software development.
-                        </p>
-                        <h3>VIET UY TIN CO., LTD.</h3>
-                        <ul className="vietuytin-work">
-                            <li>Position: Translator</li>
-                            <li>Years of work: 2015 - 2019</li>
-                            <li>Translated notarized office documents between English and Vietnamese with high accuracy.</li>
-                            <li>Ensured consistency, confidentiality, and attention to detail in official documentation.</li>
-                        </ul>
-                        <h3>THE ASIAN INTERNATIONAL SCHOOL</h3>
-                        <ul className="asian-school-work">
-                            <li>Position: Assistant to the Director</li>
-                            <li>Years of work: 2019 - 2021</li>
-                            <li>Assisted the Director with administrative tasks and communication with parents and staff.</li>
-                            <li>Organized documents and supported coordination of school activities.</li>
-                        </ul>
-                        <h3>YDR VIETNAM CO., LTD. - A branch of Yuasa Design Room Co., Ltd.</h3>
+                        <h3>Technical Illustrator</h3>
+                        <h4>YDR Vietnam Co., Ltd. (Yuasa Design Room) - Vietnam</h4>
+                        <h4>2021 - 2024</h4>
                         <ul className="ydr-work">
-                            <li>Position: Technical Illustrator for Construction Drawings</li>
-                            <li>Years of work: 2021 - 2024</li>
                             <li>
-                                Drew and revised detailed technical illustrations for large-scale construction projects.
+                                Created and revised detailed technical drawings for large-scale construction projects,
+                                pensuring precision and consistency.
                             </li>
-                            <li>Ensured accuracy and compliance with industry standards through careful review and revisions</li>
+                            <li>
+                                Ensured accuracy and compliance with industry standards through thorough review and revisions.
+                            </li>
+                        </ul>
+
+                        <h3>Assistant to the Director</h3>
+                        <h4>The Asian International School - Vietnam</h4>
+                        <h4>2019 - 2021</h4>
+                        <ul className="asian-school-work">
+                            <li>
+                                Supported administrative operations and coordinated communication between management, staff, and parents.
+                            </li>
+                            <li>
+                                Organized documents and assisted in planning school activities.
+                            </li>
+                        </ul>
+
+                        <h3>Translator</h3>
+                        <h4>Viet Uy Tin Co., Ltd. - Vietnam</h4>
+                        <h4>2015 - 2019</h4>
+                        <ul className="vietuytin-work">
+                            <li>
+                                Translated office documents between English and Vietnamese with high accuracy.
+                            </li>
+                            <li>
+                                Maintained consistency, confidentiality, and attention to detail in all documentation.
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -162,12 +151,12 @@ function Content({page}) {
                         <div className="soft-skills">
                             <h3>SOFT SKILLS</h3>
                             <ul className="soft-skills-list">
-                                <li>Effective time management with consistent ability to meet deadlines.</li>
-                                <li>Ability to perform well under pressure in dynamic environments.</li>
-                                <li>Strong problem-solving with a practical and analytical approach.</li>
-                                <li>High attention to detail and accuracy in tasks and documentation.</li>
-                                <li>Strong work ethic and sense of responsibility.</li>
-                                <li>Quick learner with the ability to adapt and communicate effectively within teams.</li>
+                                <li>Strong time management with the ability to consistently meet deadlines.</li>
+                                <li>Ability to work effectively under pressure in fast-paced environments.</li>
+                                <li>Practical problem-solving with a structured and analytical approach.</li>
+                                <li>High attention to detail, especially in documentation and task execution.</li>
+                                <li>Strong sense of responsibility and work ethic.</li>
+                                <li>Effective communication and adaptability in team environments.</li>
                             </ul>
                         </div>
                     </div>
@@ -177,7 +166,7 @@ function Content({page}) {
             {page === 'projects' && (
                 <section className="projects-section">
                     <h2>Projects</h2>
-                    <p><em>*Clicking on the project titles will take you to the respective project pages.</em></p>
+                    <p><em>*Clicking the project titles will take you to the respective project pages.</em></p>
                     <div>
                         <div className="project-item">
                             <div className="project-description">
@@ -192,23 +181,6 @@ function Content({page}) {
                                 </ul>
                             </div>
                             <img src={petCafe} alt="Pet Café Website"/>
-                        </div>
-                        <div className="project-item">
-                            <div className="project-description">
-                                <h3><a href="https://github.com/QuangDoan7/ColorEase" target="_blank" rel="noopener noreferrer">Color Ease - A Color Vision Deficiency Assistance Application</a></h3>
-                                <ul>
-                                    <li>
-                                        Motivated by cousin's colorblind condition, a real-time camera-based application designed and
-                                        built to assist individuals with color vision deficiency in distinguishing colors more effectively
-                                        (developed for Deuteranopia, being expanded to more conditions of color blindness later).
-                                    </li>
-                                    <li>
-                                        Built using Python, with research and applied concepts related to color vision deficiency and image processing,
-                                        focusing on Deuteranopia and planned expansion to additional conditions
-                                    </li>
-                                </ul>
-                            </div>
-                            <img src={colorEase} alt="Color Ease Application"/>
                         </div>
                     </div>
                 </section>
