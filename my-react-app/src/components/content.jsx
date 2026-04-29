@@ -64,7 +64,7 @@ function Content({page}) {
                         <h3>Software Development Advanced Diploma</h3>
                         <ul>
                             <li>Mohawk College - Hamilton, Ontario, Canada </li>
-                            <li>2024 - 2028 (Expected) | GPA: 90.5</li>
+                            <li>2024 - 2028 (Expected) | GPA: 90.53</li>
                         </ul>
                         <h3>Bachelor of Arts in English Language (Translation and Interpretation)</h3>
                         <ul>
