@@ -14,9 +14,12 @@ import gitHub from "../assets/images/github.png";
 import VSCode from "../assets/images/visualstudiocode.png";
 import visualStudio from "../assets/images/visualstudio.png";
 import intelliJ from "../assets/images/intellij.png";
+import netCore from "../assets/images/netCore.png";
 import petCafe from "../assets/images/petCafe.png";
-import colorEase from "../assets/images/colorEase.png";
-
+import exploreSaigon from "../assets/images/exploreSaigon.png";
+import masterTheRecipes from "../assets/images/masterTheRecipes.png";
+import gamesCollection from "../assets/images/gamesCollection.png";
+import moviesCollection from "../assets/images/moviesCollection.png";
 
 function Content({page}) {
     return(
@@ -28,7 +31,7 @@ function Content({page}) {
                     <div>
                         <p>
                             My name is Thanh Quang Doan. I am a Software Development student at Mohawk College, currently based in Hamilton,
-                            Canada, with a strong academic record <strong>(GPA: 90.5)</strong>. I am seeking a co-op opportunity in software development,
+                            Canada, with a strong academic record <strong>(GPA: 90.53)</strong>. I am seeking a co-op opportunity in software development,
                             with a primary interest in <strong>Front-end</strong> and <strong>Full-stack</strong> roles, while remaining open to opportunities
                             in <strong>software support</strong> and related <strong>technical positions</strong>.
                         </p>
@@ -78,7 +81,7 @@ function Content({page}) {
                     <div>
                         <h3>Technical Illustrator</h3>
                         <h4>YDR Vietnam Co., Ltd. (Yuasa Design Room) - Vietnam</h4>
-                        <h4>2021 - 2024</h4>
+                        <h4 style={{ color: '#6af341' }}>2021 - 2024</h4>
                         <ul className="ydr-work">
                             <li>
                                 Created and revised detailed technical drawings for large-scale construction projects,
@@ -91,7 +94,7 @@ function Content({page}) {
 
                         <h3>Assistant to the Director</h3>
                         <h4>The Asian International School - Vietnam</h4>
-                        <h4>2019 - 2021</h4>
+                        <h4 style={{ color: '#6af341' }}>2019 - 2021</h4>
                         <ul className="asian-school-work">
                             <li>
                                 Supported administrative operations and coordinated communication between management, staff, and parents.
@@ -103,7 +106,7 @@ function Content({page}) {
 
                         <h3>Translator</h3>
                         <h4>Viet Uy Tin Co., Ltd. - Vietnam</h4>
-                        <h4>2015 - 2019</h4>
+                        <h4 style={{ color: '#6af341' }}>2015 - 2019</h4>
                         <ul className="vietuytin-work">
                             <li>
                                 Translated office documents between English and Vietnamese with high accuracy.
@@ -135,6 +138,7 @@ function Content({page}) {
                                 <img src={javascript} alt="JavaScript"/>
                                 <img src={php} alt="PHP"/>
                                 <img src={react} alt="React"/>
+                                <img src={netCore} alt="ASP.NET Core"/>
                             </div>
                             <h4>Data Management</h4>
                             <div className="programming-languages">
@@ -166,11 +170,14 @@ function Content({page}) {
             {page === 'projects' && (
                 <section className="projects-section">
                     <h2>Projects</h2>
-                    <p><em>*Clicking the project titles will take you to the respective project pages.</em></p>
+                    <p><em>*Clicking Git Repo or Demo for knowing more about the project.</em></p>
                     <div>
                         <div className="project-item">
                             <div className="project-description">
-                                <h3><a href="https://youtu.be/y5mU7odOGSY" target="_blank" rel="noopener noreferrer">Pet Café Website</a></h3>
+                                <h3>
+                                    Pet Café Website
+                                    (<a href="https://youtu.be/y5mU7odOGSY" target="_blank" rel="noopener noreferrer">Youtube Demo</a>)
+                                </h3>
                                 <ul>
                                     <li>
                                         A pet café website that has multiple pages for the introduction, events, menu, job postings,
@@ -180,8 +187,94 @@ function Content({page}) {
                                     <li>Built using WordPress.</li>
                                 </ul>
                             </div>
-                            <img src={petCafe} alt="Pet Café Website"/>
+                            <img src={petCafe} alt="Pet Café Website" onClick={() => window.open(petCafe, '_blank')} style={{ cursor: 'pointer' }}/>
                         </div>
+                    </div>
+
+                    <div>
+                        <div className="project-item">
+                            <div className="project-description">
+                                <h3>
+                                    Explore Saigon
+                                    (<a href="https://github.com/QuangDoan7/explore-saigon.git" target="_blank" rel="noopener noreferrer">Git Repo</a>- 
+                                    <a href="https://quangdoan7.github.io/explore-saigon/" target="_blank" rel="noopener noreferrer">Website Demo</a>)
+                                </h3>
+                                <ul>
+                                    <li>
+                                        Saigon Map Explorer is a web-based interactive map application that allows users to explore locations
+                                        in Ho Chi Minh City.
+                                    </li>
+                                    <li>
+                                        The application integrates Google Maps APIs to provide real-time interaction such as marker visualization,
+                                        geolocation, geocoding, and route directions. It demonstrates front-end development skills, API integration,
+                                        and dynamic UI behavior.
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src={exploreSaigon} alt="Explore Saigon Website" onClick={() => window.open(exploreSaigon, '_blank')} style={{ cursor: 'pointer' }}/>
+                        </div>
+                    </div>
+
+                    <div className="project-item">
+                        <div className="project-description">
+                            <h3>
+                                Master the Recipes
+                                (<a href="https://github.com/QuangDoan7/recipes-master.git" target="_blank" rel="noopener noreferrer">Git Repo</a>- 
+                                <a href="https://snack.expo.dev/@woarang/master-the-recipes" target="_blank" rel="noopener noreferrer">Snack Expo Demo</a>)
+                            </h3>
+                            <ul>
+                                <li>
+                                    Master the Recipes is a mobile application built with React Native that allows users to explore
+                                    and search for meals using the public TheMealDB API.
+                                </li>
+                                <li>
+                                    This project focuses on API integration, state-driven UI, and performance-aware rendering in React Native.
+                                </li>
+                            </ul>
+                        </div>
+                        <img src={masterTheRecipes} alt="Master the Recipes Website" onClick={() => window.open(masterTheRecipes, '_blank')} style={{ cursor: 'pointer' }}/>
+                    </div>
+
+                    <div className="project-item">
+                        <div className="project-description">
+                            <h3>
+                                Movies Collection
+                                (<a href="https://github.com/QuangDoan7/movies-collection.git" target="_blank" rel="noopener noreferrer">Git Repo</a>)
+                            </h3>
+                            <ul>
+                                <li>
+                                    A full-stack web application built with ASP.NET Razor Pages that allows users to manage their personal movie collections.
+                                </li>
+                                <li>
+                                    The application supports authentication, role-based authorization, and user-specific data isolation.
+                                    Each user maintains a separate collection, while administrators have extended privileges for user management.
+                                </li>
+                            </ul>
+                        </div>
+                        <img src={moviesCollection} alt="Movies Collection Website" onClick={() => window.open(moviesCollection, '_blank')} style={{ cursor: 'pointer' }}/>
+                    </div>
+
+                    <div className="project-item">
+                        <div className="project-description">
+                            <h3>
+                                Games Collection
+                                (<a href="https://github.com/QuangDoan7/games-collection.git" target="_blank" rel="noopener noreferrer">Git Repo</a>- 
+                                <a href="https://www.youtube.com/watch?v=DCXEKAMeKm8&feature=youtu.be" target="_blank" rel="noopener noreferrer">Youtube Demo</a>)
+                            </h3>
+                            <ul>
+                                <li>
+                                    A full-stack application that allows users to manage a collection of video games, supporting full CRUD operations via a RESTful API.
+                                </li>
+                                <li>
+                                    This project includes:
+                                    <ul>
+                                        <li>A RESTful API backend built with Express and SQLite.</li>
+                                        <li>A React Native application frontend interacting with the API and maintain real-time data synchronization.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src={gamesCollection} alt="Games Collection Website" onClick={() => window.open(gamesCollection, '_blank')} style={{ cursor: 'pointer' }}/>
                     </div>
                 </section>
             )}

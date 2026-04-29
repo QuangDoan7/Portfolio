@@ -1,7 +1,7 @@
 /* Content Component Styles */
 
 .content {
-    margin: 1rem;
+    margin: 0.5rem 0rem 0.5rem 1rem;
     min-width: 350px;
     animation: fade 1s ease-in-out;
 }
@@ -23,7 +23,7 @@
     text-align: center;
     font-style: italic;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0rem 0.5rem;
 }
 
 /* About Me */
@@ -158,11 +158,14 @@
 
 .programming-languages {
     margin: 0.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .programming-languages img {
     max-width: 65px;
-    margin-right: 25px;
+    margin: 10px;
 }
 
 /* Projects */
@@ -184,6 +187,10 @@
 .project-item img {
     flex: 2 1 auto;
     max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top;
+
     border-radius: 15px;
     align-self: center;
     justify-self: center;
@@ -195,12 +202,19 @@
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.project-item h3 a {
+.project-item h3 {
     color: #edf84f;
+    font-size: 1.25rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.project-item a {
+    color: #6af341;
     font-size: 1.25rem;
     margin: 0.5rem 0.5rem;
     text-decoration: none;
 }
+
 
 .project-item li {
     color: #87A5CE;

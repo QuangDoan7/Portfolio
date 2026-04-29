@@ -1,6 +1,6 @@
 @media (min-width: 591px) {
     .sidebar {
-        margin: 1rem 0.5rem;
+        margin: 0rem 1rem 0rem 0rem;
         max-width: 250px;
     }
 }
@@ -34,7 +34,6 @@
 
 .profile-info {
     text-align: center;
-    margin: 10px;
 }
 
 .profile-details {
