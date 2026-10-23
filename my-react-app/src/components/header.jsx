@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import './header.css';
+import { greeting } from './greeting.js';
 import music from "../assets/audio/Moonlit Mirage.mp3";
 import playerIcon from "../assets/images/player.png";
 
@@ -21,7 +22,7 @@ function Header() {
 
     return(
         <header className="header">
-            <h1>Welcome to My Portfolio</h1>
+            <h1>{greeting()}</h1>
             <div className="audio-bubble" onClick={toogleAudio}>
                 <audio ref={audioRef} source src={music} loop/>
                 <span className={isPlaying ? 'playing' : 'paused'}>

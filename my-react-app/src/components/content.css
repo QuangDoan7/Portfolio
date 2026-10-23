@@ -83,7 +83,7 @@
 
 /* Work experience */
 
-.work-experience-section div p {
+.work-experience-section p {
     color: #87A5CE;
     font-size: 1.2rem;
     padding: 0.5rem 0.5rem;
@@ -121,6 +121,7 @@
 .skills-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 1rem;
 }
 
@@ -152,6 +153,7 @@
 
 .skills-section div h4 {
     color: #6af341;
+    text-align: center;
     font-size: 1.25rem;
     margin: 0.5rem 0.5rem;
 }
@@ -175,22 +177,29 @@
     border-radius: 25px;
     padding: 1rem;
     margin: 1rem 0rem;
+    gap: 0.5rem;
+}
+
+.project-title {
+    display: block;
+    margin: 0 auto;
+}
+
+.project-description {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.project-description {
+.project-description ul {
     flex: 2 1 300px;
 }
 
 .project-item img {
-    flex: 2 1 auto;
     max-width: 200px;
     max-height: 200px;
     object-fit: cover;
     object-position: top;
-
     border-radius: 15px;
     align-self: center;
     justify-self: center;
@@ -202,8 +211,10 @@
     transition: box-shadow 0.3s ease-in-out;
 }
 
+
 .project-item h3 {
     color: #edf84f;
+    text-align: center;
     font-size: 1.25rem;
     margin: 0.5rem 0.5rem;
 }
@@ -215,7 +226,6 @@
     text-decoration: none;
 }
 
-
 .project-item li {
     color: #87A5CE;
     font-size: 1.2rem;
@@ -223,7 +233,7 @@
     line-height: 1.4;
 }
 
-.projects-section p {
+.note {
     color: white;
     font-size: 1rem;
     padding: 0rem 0.5rem;

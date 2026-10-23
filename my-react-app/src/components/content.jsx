@@ -1,8 +1,8 @@
 import './content.css';
-import { greeting } from './greeting.js';
 import me from "../assets/images/me.png";
+
 import python from "../assets/images/python.png";
-import java from "../assets/images/java.png";
+import java from "../assets/images/java.png"; 
 import cSharp from "../assets/images/Csharp.png";
 import html from "../assets/images/html.png";
 import css from "../assets/images/css.png";
@@ -15,6 +15,14 @@ import VSCode from "../assets/images/visualstudiocode.png";
 import visualStudio from "../assets/images/visualstudio.png";
 import intelliJ from "../assets/images/intellij.png";
 import netCore from "../assets/images/netCore.png";
+import restapis from "../assets/images/restapi.png";
+import nodejs from "../assets/images/nodejs.png";
+import wordpress from "../assets/images/wordpress.png";
+import githubpages from "../assets/images/githubpages.png";
+import istqb from "../assets/images/ISTQB.jpg";
+import sql from "../assets/images/sql.png";
+import sqlite from "../assets/images/sqlite.png";
+
 import petCafe from "../assets/images/petCafe.png";
 import exploreSaigon from "../assets/images/exploreSaigon.png";
 import masterTheRecipes from "../assets/images/masterTheRecipes.png";
@@ -28,30 +36,23 @@ function Content({page}) {
         <div key={page} className="content">
             {page === 'about-me' && (
                 <section className="about-me-section">
-                    <h2>{greeting()}</h2>
+                    <h2>My name is Thanh Quang Doan.</h2>
                     <img src={me} alt="me"/>
                     <div>
                         <p>
-                            My name is Thanh Quang Doan, and I am a Computer Systems Technology - Software Development student at Mohawk College in Hamilton, Canada,
-                            with a strong academic record <strong>(GPA: 90.53%)</strong> and Dean's Honour standing.
+                            I'm a Software Development student at Mohawk College in Hamilton, Ontario <strong>(GPA 90.53%, Dean's Honour)</strong> who enjoys building software end to end: designing interfaces, building REST APIs, working with databases, and testing the result.
                         </p>
                         <p>
-                            I enjoy building software from end to end - from designing user interfaces and implementing application logic to developing REST APIs,
-                            working with databases, and testing application functionality. Through academic and personal projects, I have worked with technologies
-                            including <strong>React</strong>, <strong>React Native</strong>, <strong>JavaScript</strong>, <strong>C#</strong>, <strong>ASP.NET Core</strong>, <strong>Node.js/Express</strong>, <strong>Java</strong>, and <strong>SQL/SQLite</strong>.
+                            My projects include a full-stack Games Collection app (<strong>React Native</strong>, <strong>Node.js/Express</strong>, <strong>SQLite</strong>), an <strong>ASP.NET Core</strong> web app with role-based access, an interactive map app using <strong>Google Maps APIs</strong>, and a <strong>WordPress</strong> site. I also work with <strong>JavaScript</strong>, <strong>React</strong>, <strong>C#</strong>, and <strong>Java</strong>.
                         </p>
                         <p>
-                            I also enjoy developing smaller personal tools and experimenting with new technologies outside the classroom such as a <strong> C++/SFML desktop game</strong> and
-                            a C# application called <strong>KeMo2Pad</strong>, developed to solve a controller compatibility issue my cousin encountered while gaming.
+                            I'm <strong>ISTQB Certified (CTFL v4.0)</strong> and completed a quality control project: designing test cases, testing a <strong>REST API</strong> with <strong>Postman</strong>, and automating regression tests with <strong>GitHub Actions</strong>.
                         </p>
                         <p>
-                            In addition to software development, I have a strong interest in <strong>Software Quality Control and Assurance</strong>.
-                            I hold the <strong>ISTQB Certified Tester - Foundation Level (CTFL) certification</strong> and have completed a dedicated software testing project involving requirements analysis, test planning,
-                            test case design, REST API testing with <strong>Postman</strong>, defect reporting, regression testing, and automated API regression tests using <strong>GitHub Actions</strong>.
+                            Before moving into software, I worked in translation and technical drawing, which sharpened my attention to detail and written communication.
                         </p>
                         <p>
-                            I am currently seeking opportunities in <strong>Software Development</strong>, <strong>Full-stack Development</strong>, <strong>Front-end Development</strong>, and <strong>Software QC/QA</strong>,
-                            where I can contribute to real-world projects, continue strengthening my technical skills, and grow as a software professional.
+                           I'm looking for Software Development, Full-stack, Front-end, or QA/QC opportunities where I can contribute to real projects and keep growing.
                         </p>
                     </div>
                 </section>
@@ -61,21 +62,23 @@ function Content({page}) {
                 <section className="education-section">
                     <h2>Education</h2>
                     <div>
-                        <h3>ISTQB® Certificate</h3>
+                        <h3> Computer Systems Technology – Software Development (Advanced Diploma)</h3>
                         <ul>
-                            <li>ISTQB® Certified Tester - Foundation Level (v4.0)</li>
-                            <li>Certified on September 17, 2026</li>
-                            <li>Certificate No.: 26-CTFL 4-282083-12</li>
-                        </ul>
-                        <h3>Software Development Advanced Diploma</h3>
-                        <ul>
-                            <li>Mohawk College - Hamilton, Ontario, Canada </li>
-                            <li>2024 - 2028 (Expected) | GPA: 90.53%</li>
+                            <li>Mohawk College, Hamilton, Ontario, Canada</li>
+                            <li>Sept 2024 – Expected Early 2028 | GPA: 90.53% | Dean's Honour</li>
                         </ul>
                         <h3>Bachelor of Arts in English Language (Translation and Interpretation)</h3>
                         <ul>
-                            <li>Ho Chi Minh City University of Technology (HUTECH) — Vietnam</li>
+                            <li>Ho Chi Minh City University of Technology (HUTECH), Vietnam</li>
                             <li>2011 - 2015</li>
+                        </ul>
+                    </div>
+                    <h2>Certifications</h2>
+                    <div>
+                        <h3>ISTQB® Certificate</h3>
+                        <ul>
+                            <li>ISTQB® Certified Tester – Foundation Level (CTFL), v4.0</li>
+                            <li>Certified on September 17, 2026</li>
                         </ul>
                     </div>
                 </section>
@@ -84,41 +87,46 @@ function Content({page}) {
             {page === 'work-experience' && (
                 <section className="work-experience-section">
                     <h2>Work Experience</h2>
+                    <p>
+                        Before moving into software development, I worked in construction drawing, school administration, and translation, roles that built my attention to detail, documentation habits, and written communication
+                    </p>
                     <div>
-                        <h3>Technical Illustrator</h3>
-                        <h4>YDR Vietnam Co., Ltd. (Yuasa Design Room) - Vietnam</h4>
-                        <h4 style={{ color: '#6af341' }}>2021 - 2024</h4>
+                        <h3>Technical Illustrator, Construction Drawings</h3>
+                        <h4>YDR Vietnam Co., Ltd. (a branch of Yuasa Design Room Co., Ltd.), Vietnam</h4>
+                        <h4 style={{ color: '#6af341' }}>July 2021 – Jan 2024</h4>
                         <ul className="ydr-work">
                             <li>
-                                Created and revised detailed technical drawings for large-scale construction projects,
-                                pensuring precision and consistency.
+                                Produced and maintained detailed technical drawings for large-scale infrastructure projects, including Ho Chi Minh City Metro Line 1.
                             </li>
                             <li>
-                                Ensured accuracy and compliance with industry standards through thorough review and revisions.
+                                Reviewed and revised drawings against technical standards, and worked with engineers to resolve discrepancies and keep documentation accurate and version-controlled.
                             </li>
                         </ul>
 
-                        <h3>Assistant to the Director</h3>
-                        <h4>The Asian International School - Vietnam</h4>
-                        <h4 style={{ color: '#6af341' }}>2019 - 2021</h4>
+                        <h3>Assistant to the Director of English Department</h3>
+                        <h4>The Asian International School, Vietnam</h4>
+                        <h4 style={{ color: '#6af341' }}>June 2019 – June 2021</h4>
                         <ul className="asian-school-work">
                             <li>
-                                Supported administrative operations and coordinated communication between management, staff, and parents.
+                                Managed departmental records and documentation with a high level of accuracy and confidentiality.
                             </li>
                             <li>
-                                Organized documents and assisted in planning school activities.
+                                Coordinated communication between staff and students' families, and helped plan school events and schedules.
                             </li>
                         </ul>
 
                         <h3>Translator</h3>
-                        <h4>Viet Uy Tin Co., Ltd. - Vietnam</h4>
-                        <h4 style={{ color: '#6af341' }}>2015 - 2019</h4>
+                        <h4>Viet Uy Tin Co., Ltd., Vietnam</h4>
+                        <h4 style={{ color: '#6af341' }}>May 2015 – May 2019</h4>
                         <ul className="vietuytin-work">
                             <li>
-                                Translated office documents between English and Vietnamese with high accuracy.
+                                Translated notarized and official documents between English and Vietnamese with high accuracy and consistent terminology.
                             </li>
                             <li>
-                                Maintained consistency, confidentiality, and attention to detail in all documentation.
+                                Handled sensitive, legally binding materials under strict confidentiality standards.
+                            </li>
+                            <li>
+                                Reviewed and revised translations to meet formal documentation requirements.
                             </li>
                         </ul>
                     </div>
@@ -128,47 +136,77 @@ function Content({page}) {
             {page === 'skills' && (
                 <section className="skills-section">
                     <h2>Personal Skills</h2>
-                    <div className="skills-container">
-                        <div className="development-skills">
-                            <h3>DEVELOPMENT SKILLS</h3>
-                            <h4>Programming languages</h4>
-                            <div className="programming-languages">
-                                <img src={python} alt="Python"/>
-                                <img src={java} alt="Java"/>
-                                <img src={cSharp} alt="C#"/>
+                    <div className="development-skills">
+                        <h3>DEVELOPMENT SKILLS</h3>
+                        <div className="skills-container">
+                            <div>
+                                <h4>Front-end</h4>
+                                <div className="programming-languages">
+                                    <img src={html} alt="HTML"/>
+                                    <img src={css} alt="CSS"/>
+                                    <img src={javascript} alt="JavaScript"/>
+                                    <img src={react} alt="React"/>
+                                </div>
                             </div>
-                            <h4>Web Development</h4>
-                            <div className="programming-languages">
-                                <img src={html} alt="HTML"/>
-                                <img src={css} alt="CSS"/>
-                                <img src={javascript} alt="JavaScript"/>
-                                <img src={php} alt="PHP"/>
-                                <img src={react} alt="React"/>
-                                <img src={netCore} alt="ASP.NET Core"/>
+                            <div>
+                                <h4>Back-end</h4>
+                                <div className="programming-languages">
+                                    <img src={nodejs} alt="Node.js"/>
+                                    <img src={php} alt="PHP"/>
+                                    <img src={netCore} alt="ASP.NET Core"/>
+                                    <img src={restapis} alt="REST APIs"/>
+                                </div>
                             </div>
-                            <h4>Data Management</h4>
-                            <div className="programming-languages">
-                                <img src={mySQL} alt="MySQL"/>
+                            <div>
+                                <h4>CMS & Deployment</h4>
+                                <div className="programming-languages">
+                                    <img src={wordpress} alt="WordPress"/>
+                                    <img src={githubpages} alt="GitHub Pages"/>
+                                </div>
                             </div>
-                            <h4>Tools</h4>
-                            <div className="programming-languages">
-                                <img src={gitHub} alt="GitHub"/>
-                                <img src={VSCode} alt="Visual Studio Code"/>
-                                <img src={visualStudio} alt="Visual Studio"/>
-                                <img src={intelliJ} alt="IntelliJ IDEA"/>
+                            <div>
+                                <h4>Databases</h4>
+                                <div className="programming-languages">
+                                    <img src={mySQL} alt="MySQL"/>
+                                    <img src={sqlite} alt="SQLite"/>
+                                    <img src={sql} alt="SQL"/>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Testing & QA</h4>
+                                <div className="programming-languages">
+                                    <img src={istqb} alt="ISTQB"/>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Others</h4>
+                                <div className="programming-languages">
+                                    <img src={python} alt="Python"/>
+                                    <img src={java} alt="Java"/>
+                                    <img src={cSharp} alt="C#"/>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Tools</h4>
+                                <div className="programming-languages">
+                                    <img src={gitHub} alt="GitHub"/>
+                                    <img src={VSCode} alt="Visual Studio Code"/>
+                                    <img src={visualStudio} alt="Visual Studio"/>
+                                    <img src={intelliJ} alt="IntelliJ IDEA"/>
+                                </div>
                             </div>
                         </div>
-                        <div className="soft-skills">
-                            <h3>SOFT SKILLS</h3>
-                            <ul className="soft-skills-list">
-                                <li>Strong time management with the ability to consistently meet deadlines.</li>
-                                <li>Ability to work effectively under pressure in fast-paced environments.</li>
-                                <li>Practical problem-solving with a structured and analytical approach.</li>
-                                <li>High attention to detail, especially in documentation and task execution.</li>
-                                <li>Strong sense of responsibility and work ethic.</li>
-                                <li>Effective communication and adaptability in team environments.</li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div className="soft-skills">
+                        <h3>SOFT SKILLS</h3>
+                        <ul className="soft-skills-list">
+                            <li>Time management and the ability to consistently meet deadlines.</li>
+                            <li>Composure under pressure in fast-paced environments.</li>
+                            <li>A structured, analytical approach to solving problems.</li>
+                            <li>Strong attention to detail, especially in documentation.</li>
+                            <li>Responsibility and a strong work ethic.</li>
+                            <li>Clear communication and adaptability in team settings.</li>
+                        </ul>
                     </div>
                 </section>
             )}
@@ -176,147 +214,160 @@ function Content({page}) {
             {page === 'projects' && (
                 <section className="projects-section">
                     <h2>Projects</h2>
-                    <p><em>*Clicking Git Repo or Demo for knowing more about the project.</em></p>
+                    <p className="note"><em>*Each project links to its source code (Repo) and/or a demo (Demo).</em></p>
 
                     <div className="project-item">
-                        <div className="project-description">
+                        <div className="project-title">
                             <h3>
-                                Games Collection API - Quality Control Project
-                                (<a href="https://github.com/QuangDoan7/games-collection-qc" target="_blank" rel="noopener noreferrer">Git Repo</a>)
+                                Pet Café Website (Concept Project) | WordPress
+                                (<a href="https://youtu.be/y5mU7odOGSY" target="_blank" rel="noopener noreferrer">Youtube Demo</a>)
                             </h3>
-                            <ul>
-                                <li>
-                                    A dedicated Software Quality Control project focused on validating the Games Collection REST API through functional testing,
-                                    including requirements analysis, test planning, test case design, test execution, and defect reporting.
-                                </li>
-                                <li>
-                                    Performed positive, negative, and regression testing using Postman, and
-                                    implemented automated API regression tests integrated with GitHub Actions for continuous testing.
-                                </li>
-                            </ul>
                         </div>
-                        <img src={gamesCollectionQC} alt="Games Collection QC Project" onClick={() => window.open(gamesCollectionQC, '_blank')} style={{ cursor: 'pointer' }}/>
-                    </div>    
+                        <div className="project-description">
+                            <ul>
+                                <li style={{ color: '#6af341' }}>
+                                    A multi-page website for a pet café, built in WordPress.
+                                </li>
+                                <li>
+                                    Built pages for the café's introduction, events, menu, job postings, blog, and contact information.
+                                </li>
+                                <li>Embedded a location map to help visitors find the café.</li>
+                                <li>Enabled comments on blog posts so customers can interact with the café.</li>
+                            </ul>
+                            <img src={petCafe} alt="Pet Café Website" onClick={() => window.open(petCafe, '_blank')} style={{ cursor: 'pointer' }}/>
+                        </div>
+                    </div>
 
                     <div className="project-item">
-                        <div className="project-description">
+                        <div className="project-title">
                             <h3>
-                                Games Collection
+                                Games Collection | React Native · Node.js · Express · SQLite
                                 (<a href="https://github.com/QuangDoan7/games-collection.git" target="_blank" rel="noopener noreferrer">Git Repo</a>- 
                                 <a href="https://www.youtube.com/watch?v=DCXEKAMeKm8&feature=youtu.be" target="_blank" rel="noopener noreferrer">Youtube Demo</a>)
                             </h3>
+                        </div>
+                        <div className="project-description">
                             <ul>
-                                <li>
-                                    A full-stack application that allows users to manage a collection of video games, supporting full CRUD operations via a RESTful API.
+                                <li style={{ color: '#6af341' }}>
+                                    A full-stack app for managing a personal video game collection.
                                 </li>
                                 <li>
-                                    This project includes:
-                                    <ul>
-                                        <li>A RESTful API backend built with Express and SQLite.</li>
-                                        <li>A React Native application frontend interacting with the API and maintain real-time data synchronization.</li>
-                                    </ul>
+                                    Built a REST API with Express and SQLite supporting full CRUD (create, read, update, delete).
+                                </li>
+                                <li>
+                                    Developed a React Native app that consumes the API and keeps the displayed data in sync.
+                                </li>
+                                <li>
+                                    Tested the API in a separate quality control project (see below).
                                 </li>
                             </ul>
+                            <img src={gamesCollection} alt="Games Collection Website" onClick={() => window.open(gamesCollection, '_blank')} style={{ cursor: 'pointer' }}/>
                         </div>
-                        <img src={gamesCollection} alt="Games Collection Website" onClick={() => window.open(gamesCollection, '_blank')} style={{ cursor: 'pointer' }}/>
                     </div>
 
                     <div className="project-item">
-                        <div className="project-description">
+                        <div className="project-title">
                             <h3>
-                                Movies Collection
-                                (<a href="https://github.com/QuangDoan7/movies-collection.git" target="_blank" rel="noopener noreferrer">Git Repo</a>)
+                                Games Collection API – Quality Control Project | Postman · GitHub Actions
+                                (<a href="https://github.com/QuangDoan7/games-collection-qc" target="_blank" rel="noopener noreferrer">Git Repo</a>)
                             </h3>
+                        </div>
+                        <div className="project-description">
                             <ul>
-                                <li>
-                                    A full-stack web application built with ASP.NET Razor Pages that allows users to manage their personal movie collections.
+                                <li style={{ color: '#6af341' }}>
+                                    A functional testing project for the Games Collection REST API.
                                 </li>
                                 <li>
-                                    The application supports authentication, role-based authorization, and user-specific data isolation.
-                                    Each user maintains a separate collection, while administrators have extended privileges for user management.
+                                    Analyzed requirements, wrote a test plan, and designed test cases.
+                                </li>
+                                <li>
+                                    Executed positive, negative, and regression tests in Postman and reported defects.
+                                </li>
+                                <li>
+                                    Automated API regression tests with GitHub Actions for continuous testing.
                                 </li>
                             </ul>
+                            <img src={gamesCollectionQC} alt="Games Collection QC Project" onClick={() => window.open(gamesCollectionQC, '_blank')} style={{ cursor: 'pointer' }}/>
                         </div>
-                        <img src={moviesCollection} alt="Movies Collection Website" onClick={() => window.open(moviesCollection, '_blank')} style={{ cursor: 'pointer' }}/>
+                        
                     </div>
 
                     <div className="project-item">
-                        <div className="project-description">
+                        <div className="project-title">
                             <h3>
-                                Explore Saigon
+                                Movies Collection | ASP.NET Core · Razor Pages · C#
+                            </h3>
+                        </div>
+                        <div className="project-description">
+                            <ul>
+                                <li style={{ color: '#6af341' }}>
+                                    A full-stack web app where each user manages a personal movie collection.
+                                </li>
+                                <li>
+                                    Implemented authentication and role-based authorization.
+                                </li>
+                                <li>
+                                    Isolated each user's data so accounts only see their own collection.
+                                </li>
+                                <li>
+                                    Gave administrators extended privileges for user management.
+                                </li>
+                            </ul>
+                            <img src={moviesCollection} alt="Movies Collection Website" onClick={() => window.open(moviesCollection, '_blank')} style={{ cursor: 'pointer' }}/>
+                        </div>
+                    </div>
+
+                    <div className="project-item">
+                        <div className="project-title">
+                            <h3>
+                                Explore Saigon | Bootstrap · Google Maps APIs
                                 (<a href="https://github.com/QuangDoan7/explore-saigon.git" target="_blank" rel="noopener noreferrer">Git Repo</a>- 
                                 <a href="https://quangdoan7.github.io/explore-saigon/" target="_blank" rel="noopener noreferrer">Website Demo</a>)
                             </h3>
+                        </div>
+                        <div className="project-description">
                             <ul>
-                                <li>
-                                    Saigon Map Explorer is a web-based interactive map application that allows users to explore locations
-                                    in Ho Chi Minh City.
+                                <li style={{ color: '#6af341' }}>
+                                    An interactive map app for exploring locations in Ho Chi Minh City.
                                 </li>
                                 <li>
-                                    The application integrates Google Maps APIs to provide real-time interaction such as marker visualization,
-                                    geolocation, geocoding, and route directions. It demonstrates front-end development skills, API integration,
-                                    and dynamic UI behavior.
+                                    Integrated Google Maps APIs for marker visualization, geolocation, and geocoding
+                                </li>
+                                <li>
+                                    Added route directions between locations
                                 </li>
                             </ul>
+                            <img src={exploreSaigon} alt="Explore Saigon Website" onClick={() => window.open(exploreSaigon, '_blank')} style={{ cursor: 'pointer' }}/>
                         </div>
-                        <img src={exploreSaigon} alt="Explore Saigon Website" onClick={() => window.open(exploreSaigon, '_blank')} style={{ cursor: 'pointer' }}/>
                     </div>
 
                     <div className="project-item">
-                        <div className="project-description">
+                        <div className="project-title">
                             <h3>
-                                Master the Recipes
+                                Master the Recipes | React Native · TheMealDB API
                                 (<a href="https://github.com/QuangDoan7/recipes-master.git" target="_blank" rel="noopener noreferrer">Git Repo</a>- 
                                 <a href="https://snack.expo.dev/@woarang/master-the-recipes" target="_blank" rel="noopener noreferrer">Snack Expo Demo</a>)
                             </h3>
-                            <ul>
-                                <li>
-                                    Master the Recipes is a mobile application built with React Native that allows users to explore
-                                    and search for meals using the public TheMealDB API.
-                                </li>
-                                <li>
-                                    This project focuses on API integration, state-driven UI, and performance-aware rendering in React Native.
-                                </li>
-                            </ul>
                         </div>
-                        <img src={masterTheRecipes} alt="Master the Recipes Website" onClick={() => window.open(masterTheRecipes, '_blank')} style={{ cursor: 'pointer' }}/>
-                    </div>
-
-                    <div className="project-item">
                         <div className="project-description">
-                            <h3>
-                                Pet Café Website
-                                (<a href="https://youtu.be/y5mU7odOGSY" target="_blank" rel="noopener noreferrer">Youtube Demo</a>)
-                            </h3>
                             <ul>
-                                <li>
-                                    A pet café website that has multiple pages for the introduction, events, menu, job postings,
-                                    blog posts, and contact information.
-                                </li>
-                                <li>Included mini map for a clear location, and comment section at blog posts for customer interaction.</li>
-                                <li>Built using WordPress.</li>
-                            </ul>
-                        </div>
-                        <img src={petCafe} alt="Pet Café Website" onClick={() => window.open(petCafe, '_blank')} style={{ cursor: 'pointer' }}/>
-                    </div>
-
-                    <div className="project-item">
-                        <div className="project-description">
-                            <h3>
-                                Keyboard & Mouse as Virtual Controller
-                                (<a href="https://github.com/QuangDoan7/KeMo2Pad" target="_blank" rel="noopener noreferrer">GitRepo</a>)
-                            </h3>
-                            <ul>
-                                <li>
-                                    A Windows desktop application built with C# that converts keyboard and mouse inputs into virtual game controller inputs.
+                                <li style={{ color: '#6af341' }}>
+                                    A mobile app for exploring and searching meals using the public TheMealDB API.
                                 </li>
                                 <li>
-                                    Supports customizable key mappings, mouse sensitivity adjustments, and hotkey controls for a personalized gaming experience.
+                                    Integrated the API to browse meal categories, search dishes, and view ingredients.
+                                </li>
+                                <li>
+                                    Built a state-driven UI that updates as users browse and search.
+                                </li>
+                                <li>
+                                    Used conditional rendering and efficient state management to keep the app responsive.
                                 </li>
                             </ul>
+                            <img src={masterTheRecipes} alt="Master the Recipes Website" onClick={() => window.open(masterTheRecipes, '_blank')} style={{ cursor: 'pointer' }}/>
                         </div>
-                        <img src={keMo2Pad} alt="Keyboard & Mouse as Virtual Controller" onClick={() => window.open(keMo2Pad, '_blank')} style={{ cursor: 'pointer' }}/>
                     </div>
+                    
                 </section>
             )}
 
