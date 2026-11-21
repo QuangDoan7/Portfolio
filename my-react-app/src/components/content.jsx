@@ -29,7 +29,7 @@ import masterTheRecipes from "../assets/images/masterTheRecipes.png";
 import gamesCollection from "../assets/images/gamesCollection.png";
 import moviesCollection from "../assets/images/moviesCollection.png";
 import gamesCollectionQC from "../assets/images/gamesCollectionQC.png";
-import keMo2Pad from "../assets/images/kemo2pad.png";
+import moviesCollectionQA from "../assets/images/moviesCollectionQA.png";
 
 function Content({page}) {
     return(
@@ -268,7 +268,7 @@ function Content({page}) {
                     <div className="project-item">
                         <div className="project-title">
                             <h3>
-                                Games Collection API – Quality Control Project | Postman · GitHub Actions
+                                Games Collection API - Quality Control Project | Postman · GitHub Actions
                                 (<a href="https://github.com/QuangDoan7/games-collection-qc" target="_blank" rel="noopener noreferrer">Git Repo</a>)
                             </h3>
                         </div>
@@ -296,6 +296,7 @@ function Content({page}) {
                         <div className="project-title">
                             <h3>
                                 Movies Collection | ASP.NET Core · Razor Pages · C#
+                                (<a href="https://github.com/QuangDoan7/movies-collection" target="_blank" rel="noopener noreferrer">Git Repo</a>)
                             </h3>
                         </div>
                         <div className="project-description">
@@ -314,6 +315,32 @@ function Content({page}) {
                                 </li>
                             </ul>
                             <img src={moviesCollection} alt="Movies Collection Website" onClick={() => window.open(moviesCollection, '_blank')} style={{ cursor: 'pointer' }}/>
+                        </div>
+                    </div>
+
+                    <div className="project-item">
+                        <div className="project-title">
+                            <h3>
+                                Movies Collection - QA Automation | Java · Selenium · JUnit 5 · GitHub Actions
+                                (<a href="https://github.com/QuangDoan7/movies-collection-qa-automation" target="_blank" rel="noopener noreferrer">Git Repo</a>)
+                            </h3>
+                        </div>
+                        <div className="project-description">
+                            <ul>
+                                <li style={{ color: '#6af341' }}>
+                                    A UI automation testing project for the Movies Collection web app.
+                                </li>
+                                <li>
+                                    Developed positive and negative tests using Java, Selenium, and JUnit 5.
+                                </li>
+                                <li>
+                                    Applied Page Object Model (POM) for reusable and maintainable test code.
+                                </li>
+                                <li>
+                                    Automated regression testing with GitHub Actions and cross-repository triggers.
+                                </li>
+                            </ul>
+                            <img src={moviesCollectionQA} alt="Movies Collection QA Automation" onClick={() => window.open(moviesCollectionQA, '_blank')} style={{ cursor: 'pointer' }}/>
                         </div>
                     </div>
 
